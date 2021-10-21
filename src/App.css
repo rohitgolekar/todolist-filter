@@ -1,0 +1,21 @@
+.container {
+  background: darkred;
+    color: #ffffff;
+    font-family: ui-sans-serif, ui-rounded;
+    box-shadow: 5px 10px 24px 0px #212529;
+}
+
+form {
+  position: relative;
+}
+
+form button {
+  position: absolute !important;
+  right: 5px !important;
+  top: 4px !important;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
