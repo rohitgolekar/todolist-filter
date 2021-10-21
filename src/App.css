@@ -1,3 +1,15 @@
+h3:hover {
+     text-shadow: 5px 5px red;
+     animation-name: bounce;
+     animation-duration: 2s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-25px); }
+  60% { transform: translateY(-15px); }
+}
+
 .container {
   background: darkred;
     color: #ffffff;
@@ -13,9 +25,28 @@ form button {
   position: absolute !important;
   right: 5px !important;
   top: 4px !important;
+  border-radius: 50%;
+    border: none;
+    padding: 4px 8px 2px 8px;
+}
+
+form button:hover {
+  box-shadow: 0px 0px 10px 5px #6c757d;
 }
 
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.btn {
+  border-radius: 50%;
+    border: none;
+    padding: 4px 8px 4px 8px;
+}
+
+.btn:hover {
+  transition: transform 125ms;
+  transform: translateY(-5px);
+  transition-timing-function: ease;
 }
